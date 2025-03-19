@@ -9,15 +9,13 @@
   <?php include './menu.php' ?>
   <table>
     <tr>
-      <th>CEDULA</th>
-      <th>NOMBRE</th>
-      <th>APELLIDO</th>
-      <th>DIRECCION</th>
-      <th>EMAIL</th>
-      <th>TELEFONO</th>
+      <th>ID_MASCOTA</th>
+      <th>NOMBRE_MASCOTA</th>
+      <th>TIPO_MASCOTA</th>
+      <th>RAZA</th>
       <th>SEXO</th>
-      <th>NACIONALIDAD</th>
-      <th>CIUDAD</th>
+      <th>NOMBRE_CLIENTE</th>
+      <th>FECHA_NACIMIENTO</th>
     </tr>
     <?php
       $sql = "SELECT * FROM usuarios";
@@ -25,15 +23,13 @@
       while ($row = mysqli_fetch_assoc($result)) {
     ?>
       <tr>
-        <td><?= $row['cedula']; ?></td>
-        <td><?= $row['nombre']; ?></td>
-        <td><?= $row['apellido']; ?></td>
-        <td><?= $row['direccion']; ?></td>
-        <td><?= $row['email']; ?></td>
-        <td><?= $row['telefono']; ?></td>
+        <td><?= $row['id_mascota']; ?></td>
+        <td><?= $row['nombre_mascota']; ?></td>
+        <td><?= $row['tipo_mascota']; ?></td>
+        <td><?= $row['raza']; ?></td>
         <td><?= $row['sexo']; ?></td>
-        <td><?= $row['nacionalidad']; ?></td>
-        <td><?= $row['ciudad']; ?></td>
+        <td><?= $row['nombre_cliente']; ?></td>
+        <td><?= $row['fecha_nacimiento']; ?></td>
       </tr>
     <?php } ?>
   </table>

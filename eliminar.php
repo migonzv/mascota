@@ -1,5 +1,5 @@
 <?php include "./conexion.php";
-  $sql = "DELETE FROM usuarios WHERE cedula='$_GET[eli]'";
+  $sql = "DELETE FROM usuarios WHERE id_mascota='$_GET[eli]'";
   $result = mysqli_query($link, $sql);
   if (!mysqli_error($link)) {
 ?>

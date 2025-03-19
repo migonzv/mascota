@@ -1,5 +1,5 @@
 <?php include("./conexion.php");
-$sql = "UPDATE usuarios SET nombre='$_POST[nombre]', apellido='$_POST[apellido]',direccion='$_POST[direccion]',email='$_POST[email]',telefono='$_POST[telefono]', sexo='$_POST[sexo]', nacionalidad='$_POST[nacionalidad]' , ciudad='$_POST[ciudad]' where cedula='$_POST[oculto]'";
+$sql = "UPDATE usuarios SET id_mascota='$_POST[id_mascota]', nombre_mascota='$_POST[nombre_mascota]',tipo_mascota='$_POST[tipo_mascota]',raza='$_POST[raza]',sexo='$_POST[sexo]', nombre_cliente='$_POST[nombre_cliente]', fecha_nacimiento='$_POST[fecha_nacimiento]'";
 $result = mysqli_query($link, $sql);
 if (!mysqli_error($link)) {
 ?>
