@@ -10,7 +10,6 @@
   <?php include './menu.php' ?>
 
   <form method="post" action="./insertar_logica.php">
-    <label id="id_mascota">id_mascota: <input id="id_mascota" name="id_mascota" type="text" required /></label>
     <label id="nombre_mascota">nombre_mascota: <input id="nombre_mascota" name="nombre_mascota" type="text" required /></label>
     <label id="raza">raza: <input id="raza" name="raza" type="text" required /></label>
     <label id="nombre_cliente">nombre_cliente: <input id="nombre_cliente" name="nombre_cliente" type="text" required /></label>
@@ -27,7 +26,7 @@
         <option value="loro">loro</option>
       </select>
     </label>
-    <label id="fecha_nacimiento">raza: <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" required /></label>
+    <label id="fecha_nacimiento">fecha_nacimiento: <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" required /></label>
     <input id="registrar" name="Registrar" type="submit" />
     <input id="limpiar" name="Limpiar" type="reset" />
   </form>

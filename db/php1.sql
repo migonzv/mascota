@@ -5,7 +5,7 @@ COLLATE utf8mb4_general_ci;
 USE php1_migonzv;
 
 CREATE TABLE IF NOT EXISTS usuarios (
-  cedula INT(10) PRIMARY KEY NOT NULL,
+  cedula INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,
   nombre VARCHAR(20) NOT NULL,
   apellido VARCHAR(20) NOT NULL,
   direccion VARCHAR(100) NOT NULL,
