@@ -11,7 +11,7 @@
 <?php include './menu.php' ?>
   <form method="POST" name="form1">
     <div class="buscardor">
-      <label for="buscar">id_mascota: </label>
+      <label for="buscar">mascota: </label>
       <input type="text" name="buscar" id="buscar" />
       <input type="submit" value="Buscar" />
     </div>
